@@ -105,11 +105,10 @@ button {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
 
     body {
-        width: 500px;
-        border: 1px red solid;
+        width: 100%;
     }
 
     .grid-container {
@@ -123,7 +122,7 @@ button {
     }
 
     .join-community {
-        margin: 8% 20% 0;
+        margin: 8% 8% 0;
         padding: 4%;
         grid-area: join;
         border: 1px red solid;
@@ -140,7 +139,7 @@ button {
     }
 
     .subscription {
-        margin: 0% 20%;
+        margin: 0% 8%;
         padding: 4%;
         grid-area: subs;
         border-radius: 0;
@@ -148,7 +147,7 @@ button {
     }
 
     .why-us {
-        margin: 0% 20% 20%;
+        margin: 0% 8% 8%;
         padding: 4%;
         grid-area: why;
         border-bottom-left-radius: 10px;
