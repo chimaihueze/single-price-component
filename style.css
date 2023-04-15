@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background: hsl(204, 43%, 93%);
+}
+
+.grid-container {
+    display: grid;
+
+    grid-template-areas: 
+        "join join"
+        "subs why";
+}
+
+
+.join-community {
+    background: white;
+    margin: 2rem 2rem 0;
+    padding: 2rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    grid-area: join;
+}
+
+.join-community > h2 {
+    color: hsl(179, 62%, 43%);
+    line-height: 3.5rem;
+}
+
+.join-community > h3 {
+    color: hsl(71, 73%, 54%);
+    line-height: 2.5rem;
+}
+
+.join-community > p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5rem;
+}
+
+.subscription {
+    background: hsl(179, 62%, 43%);
+    color: white;
+    padding: 2rem;
+    margin: 0 0 2rem 2rem;
+    grid-area: subs;
+    line-height: 3rem;
+    border-bottom-left-radius: 10px;
+}
+
+.amount {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.duration {
+    color: hsl(204, 43%, 93%); 
+    font-size: 13px;
+}
+
+.subscription > p {
+    font-size: 14px;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background: hsl(71, 73%, 54%);
+    width: 100%;
+    border: 0;
+    border-radius: 6px;
+    padding: 4%;
+    color: hsl(204, 43%, 93%);
+   
+}
+
+.why-us {
+    background: hsl(179, 45%, 52%);
+    color: hsl(204, 43%, 93%);
+    padding: 2rem;
+    margin: 0 2rem 2rem 0;
+    grid-area: why;
+    border-bottom-right-radius: 10px;
+}
+
+.why-us > h3 {
+    line-height: 2.5rem;
+}
+
+.why-us > p {
+    line-height: 1.5rem;
+    font-size: 14px;
+}
+
+
+
+
+@media (max-width: 400px) {
+
+    body {
+        width: 100%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+            "join"
+            "subs"
+            "why";
+    }
+
+    .join-community {
+        margin: 8% 20% 0;
+        padding: 4%;
+        grid-area: join;
+    }
+
+    .join-community > h3 {
+        color: hsl(71, 73%, 54%);
+        line-height: 2rem;
+        padding-bottom: 4%;
+    }
+
+    .join-community > p > br {
+        display: none;
+    }
+
+    .subscription {
+        margin: 0% 20%;
+        padding: 4%;
+        grid-area: subs;
+        border-radius: 0;
+    }
+
+    .why-us {
+        margin: 0% 20%;
+        padding: 4%;
+        grid-area: why;
+        border-bottom-left-radius: 10px;
+    }
+
+} 
