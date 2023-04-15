@@ -105,13 +105,16 @@ button {
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
 
     body {
-        width: 100%;
+        width: 500px;
+        border: 1px red solid;
     }
 
     .grid-container {
+        border: 1px blue solid;
+        width: 100%;
         display: grid;
         grid-template-areas: 
             "join"
@@ -123,6 +126,7 @@ button {
         margin: 8% 20% 0;
         padding: 4%;
         grid-area: join;
+        border: 1px red solid;
     }
 
     .join-community > h3 {
@@ -140,10 +144,11 @@ button {
         padding: 4%;
         grid-area: subs;
         border-radius: 0;
+        border: 1px red solid;
     }
 
     .why-us {
-        margin: 0% 20%;
+        margin: 0% 20% 20%;
         padding: 4%;
         grid-area: why;
         border-bottom-left-radius: 10px;
